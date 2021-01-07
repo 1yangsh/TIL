@@ -30,7 +30,7 @@
 ### 3. status
 
 - `git status`
-- 현재 상태를 출력
+- 현재 git의 상태를 출력해주는 명령어
 
 
 
@@ -51,7 +51,7 @@
 ### 6. remote add
 
 - `git remote add origin <url>`
-- 깃아, 원격저장소 추가해줘 별명은 origin이고 실제주소는 <url>이야 
+- 원격저장소 주소를 저장
 
 
 
@@ -76,4 +76,5 @@
 ### 3. push
 
 - `git push origin master`
+- 원격저장소에 master 브랜치의 데이터를 전송
 
