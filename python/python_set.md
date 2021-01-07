@@ -21,3 +21,5 @@ s1.intersection(s2)     # 결과 값 {3,4,5}         = s1 & s2
 s1.difference(s2)       # 결과 값 {1,2}		   = s1 - s2
 ```
 
+
+
