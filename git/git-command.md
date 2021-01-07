@@ -20,14 +20,12 @@
 ### 2. config
 
 - `git config --global user.email "email@email.com"`
-
 - `--global` 옵션과 `--local` 둘중 하나 선택하여 사용
-
-  - 일반적으로 global 설정을 해 놓으면 내 컴퓨터에서 추가적으로 변경할 일이 없음
-
+- 일반적으로 global 설정을 해 놓으면 내 컴퓨터에서 추가적으로 변경할 일이 없음
   - 하지만 공용으로 사용하는 pc, 회사의 pc라면 local 설정 필요
+- `git config --global user.name "username"`
 
-    
+
 
 ### 3. status
 
