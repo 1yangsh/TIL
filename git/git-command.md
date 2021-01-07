@@ -48,10 +48,14 @@
 
 
 
-### 6. remote add
+### 6. remote
 
 - `git remote add origin <url>`
-- 원격저장소 주소를 저장
+  -  원격저장소 주소를 저장
+- `git remote -v`
+  - 현재 원격저장소의 상태를 출력
+
+
 
 
 
