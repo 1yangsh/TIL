@@ -36,3 +36,11 @@
 
     - -> 설정아이콘 -> Add -> 왼쪽메뉴의 System Interpreter 
     - C:\ProgramData\Anaconda3\python.exe ->ok
+
+
+
+- 외부 모듈
+  - `pip install 외부모듈명`  // 외부 모듈 설치
+  - `pip show 외부모듈명`  // 외부 모듈 설치 확인
+  - `pip list`  // 외부 모듈 설치 확인
+  - `pip uninstall 외부모듈명`  // 외부 모듈 제거
