@@ -8,7 +8,7 @@
 
   - Synchronous(동기) 방식으로 통신
 
-  - request(요청)을 보내고 응답(response)이 올때까지 클라이언트는 waiting
+  - request(요청)을 보내고 응답(response)이 올때까지 클라이언트는 waiting 하는 방식
 
     
 
@@ -17,5 +17,6 @@
   - server에서 data(xml, json, csv)를 내려주면, 클라이언트에서 html을 동적으로 작성하는 방식
   - Ajax(Asynchronous Javascript and XML)
   - Asynchronous(비동기) 방식으로 통신
-  - request(요청)을 보내고 response(응답)을 waiting하지 않고, 다른일을 하는 방식 
+  - request(요청)을 보내고 response(응답)을 waiting 하지 않고, 다른일을 하는 방식 
+  - javascript의 XmlHttpRequest(XHR) 가 비동기 방식으로 통신을 해주는 역할을 담당
 
