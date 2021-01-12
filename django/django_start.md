@@ -83,10 +83,10 @@
   - mydjango/settings.py
 
       ```python
-  INSTALLED_APPS = [
+    INSTALLED_APPS = [
       ...,
       '<App명>'  # 추가
-  ]
+    ]
       ```
 
 
@@ -125,3 +125,18 @@
   - 실제 데이터베이스에 Model 추가를 반영하기
     - `python manage.py migrate blog`
 
+
+
+---
+
+
+
+#### Migrations
+
+- 모델 변경내역 히스토리 관리
+- 모델의 변경내역을 Database Schema (db data 구조) 로 반영시키는 효율적인 방법을 제공
+- 관련 명령
+  - `python manage.py makemigrations <app-name>`  # 마이그레이션 파일 생성
+  - `python manage.py migrations <app-name>`  # 마이그레이션 적용
+  - `python manage.py showmigrations <app-name>`  # 마이그레이션 적용 현황
+  - `python manage.py sqlmigrations <app-name> <migration-name>`  # 지정 마이크레이션의 SQL 내용
