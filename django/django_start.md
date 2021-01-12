@@ -49,12 +49,12 @@
 
   - mydjango/settings.py
 
-    ```
+    ```python
     LANGUAGE_CODE = 'ko'
     TIME_ZOME = 'Asia/Seoul'
     ```
 
-    ```
+    ```python
     import os
     STATIC_URL = '/static/'
     STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL)
@@ -73,9 +73,55 @@
     - `python manage.py createsuperuser`
       - http://localhost:8000/admin // 접속
 
+  
+
+
+- App 디렉토리 생성
+
+
+  - `python manage.py startapp <App명>`
+  - mydjango/settings.py
+
+      ```python
+  INSTALLED_APPS = [
+      ...,
+      '<App명>'  # 추가
+  ]
+      ```
 
 
 
+---
 
 
+
+#### blog 만들기
+
+
+
+- Model class 만들기
+
+  - 예) blog post 
+
+  ```
+  from django.db import models
+  from django.utils import timezone
+  
+  class Post(models.Model):
+      # 작성자
+      author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+      # 글 제목
+      title = models.CharField(max_length=200)
+      # 글 내용
+      text = models.TextField()
+      # 작성일
+      created_date = models.DateTimeField(default=timezone.now)
+      # 수정일
+      published_date = models.DateTimeField(blank=True, null=True)
+  ```
+
+  - 마이그레이션 파일(migration file) 생성하기  (db와 클래스 연동)
+    - `python manage.py makemigrations <app이름>`   ## 작업지시 파일 생성
+  - 실제 데이터베이스에 Model 추가를 반영하기
+    - `python manage.py migrate blog`
 
