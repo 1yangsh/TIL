@@ -97,7 +97,8 @@
 - 객체를 RDB의 Table로 매핑
 - Mapping Rule
   -  Model Class <-> Table
-  - Model instance <-> row
+  - Object <-> Row(Record), 행
+  - Variable <-> Column, 열
 
 
 
