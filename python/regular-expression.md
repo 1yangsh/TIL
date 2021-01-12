@@ -115,7 +115,9 @@
 ```python
  import re
  words = re.compile('[a-zA-Z0-9]+')
- result = words.findall(문자열)
+ result = words.findall(문자열)      
+    
+ # result = re.findall('[a-zA-Z0-9]+', 문자열)
 ```
 
 
