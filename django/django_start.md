@@ -34,7 +34,40 @@
 
 
 
+
+
 ---
+
+#### 시작
+
+- Django 프로젝트 생성
+  - `django-admin starproject <mydjango> .`
+
+
+
+- Django 프로젝트 설정 변경
+
+  - mydjango/settings.py
+
+    ```
+    LANGUAGE_CODE = 'ko'
+    TIME_ZOME = 'Asia/Seoul'
+    ```
+
+    ```
+    import os
+    STATIC_URL = '/static/'
+    STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL)
+    ```
+
+    
+
+- Django 프로젝트 DB 생성과 Server 시작
+  - 데이터베이스 생성
+    - `python manage.py migrate`
+    - `db.sqlite3` 파일이 생성됨
+  - Server 시작
+    - `python manage.py runserver`
 
 
 

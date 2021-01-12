@@ -22,9 +22,16 @@
 
     의해 통제     ex) CGI, PHP, ASP, JSP/Servlet, node.js
     
-    
+
+
+
+
 
 ---
+
+####  Web application 기본 구조
+
+
 
 - 웹 어플리케이션 기본 구조
 
@@ -42,7 +49,13 @@
 
 
 
+
+
 ---
+
+
+
+#### WAS 패턴
 
 
 
@@ -52,13 +65,13 @@
 
     
 
-- MVC 패턴
+- `MVC 패턴`
 
-  - Model         - DB 연동
+  - `Model`         - DB 연동
 
-  - View            - 화면(UI)
+  - `View`            - 화면(UI)
 
-  - Controller  - model과 view의 중재자, 로직 포함
+  - `Controller`  - model과 view의 중재자, 로직 포함
 
     - ex) Sping MVC 프레임워크 (Java에서)
 
@@ -66,9 +79,25 @@
 
       
 
-- MTV 패턴
+- `MTV 패턴`
 
-  - Model        - DB 연동
-  - Template  -  화면(UI)
-  - View          - 중재자, 로직 포함
+  - `Model`        - DB 연동
+  - `Template`  -  화면(UI)
+  - `View`          - 중재자, 로직 포함
     - Django 프레임워크 (python)
+
+
+
+---
+
+
+
+#### ORM(Object Relational Mapping)
+
+- 객체를 RDB의 Table로 매핑
+- Mapping Rule
+  -  Model Class <-> Table
+  - Model instance <-> row
+
+
+
