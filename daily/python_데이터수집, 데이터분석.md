@@ -28,6 +28,7 @@
   - 표나 그래프 형식으로 **시각화** 
   - https://matplotlib.org/gallery/index.html  # Matplolib
   - https://seaborn.pydata.org/  # Seaborn
+  - ggplot(R의 시각화 프로그램을 사용), folium(지도), plotnine
 
 
 
