@@ -14,7 +14,6 @@
   
   - View : 애플리케이션의 제어 흐름 및 처리 로직을 정의한다.
   
-    
 - 대표적 웹 서버
   - Apache
   - Ngin X
@@ -32,4 +31,10 @@
   - https://pypi.python.org/pypi/Django
 - `pip install django`
 - `django-admin --version`
+
+
+
+---
+
+
 
