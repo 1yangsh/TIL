@@ -68,6 +68,14 @@
     - `db.sqlite3` 파일이 생성됨
   - Server 시작
     - `python manage.py runserver`
+      - http://localhost:8000   // 서버 실행
+  - Superuser 계정 생성
+    - `python manage.py createsuperuser`
+      - http://localhost:8000/admin // 접속
+
+
+
+
 
 
 
