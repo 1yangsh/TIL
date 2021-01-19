@@ -30,7 +30,7 @@
 
 - 가상환경 종료
 
-  -  `conda deactive`
+  -  `conda deactivate`
 
     
 
@@ -48,9 +48,13 @@
 
   - 현재 라이브러리 목록을 보여줌
 
+    
+
 - `conda install selenium`   /   `pip install selenium`
 
   - selenium 설치
 
   
+
+
 
