@@ -2,9 +2,21 @@
 
 > HTTP 프로토콜의 대표 메소드(GET, POST, PUT, DELETE)
 
+- 서로 다른 컴퓨터가 통신으로 연결될 수 있도록 하는 프로토콜
+- http와 https 의 차이점
+  - 차이점은 S(Secure) 데이터를 주고 받는 통신 내용의 암호화 여부
+  - https가 포함되어 있다면 SSL(Secure Socket Layer)을 이용하여 주고 받는 데이터가 암호화 되어 있다는 것을 의미
+  - https를 사용하는 웹사이트는 SSL인증서를 통해 사용자의 데이터를 암호화하여 보안을 유지한다
 
 
 
+
+
+
+
+
+
+---
 
 #### RESTful API
 
