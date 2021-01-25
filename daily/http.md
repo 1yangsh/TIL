@@ -1,4 +1,4 @@
-### http
+### HTTP
 
 > HTTP 프로토콜의 대표 메소드(GET, POST, PUT, DELETE)
 
@@ -14,9 +14,9 @@
 
 
 
-
-
 ---
+
+
 
 #### RESTful API
 
@@ -35,6 +35,33 @@
 - DELETE
   - 서버가 가지고 있는 자원(리소스)를 삭제
   - db의 DELETE와 메핑
+
+
+
+---
+
+
+
+
+
+- Response Status
+  - 200번대 (response 전달 성공)
+    - 200 - SUCCESS
+    - 201 - CREATED (POST, PUT 성공)
+  - 400번대 (client 측의 오류)
+    - 400 - BAD REQUEST	
+    - 401 - UNAUTHORIZED
+    - 404 - RESOURCE NOT FOUND
+  - 500 번대 (server 측의 오류)
+    - 500 - SERVER ERROR
+
+
+
+
+
+---
+
+
 
 
 
