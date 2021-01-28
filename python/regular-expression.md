@@ -105,6 +105,7 @@
 ```python
  import re
  words = re.compile('[\u3131-\u3163\uac00-\ud7a30-9]+')
+ words = re.compile('[가-힣]+')
  result = words.findall(문자열)
 ```
 
