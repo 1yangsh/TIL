@@ -1,6 +1,6 @@
 ### django REST framework
 
-> RESTful API 서버를 쉽게 구축할 수 있도록 도와주는 오픈소스 라이버르리
+> RESTful API 서버를 쉽게 구축할 수 있도록 도와주는 오픈소스 라이브러리
 
 
 
