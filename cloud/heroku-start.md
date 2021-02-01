@@ -1,6 +1,10 @@
 ## heroku 시작하기
 
-> https://heroku.com
+> 웹 애플리케이션 배치 모델로 사용되는 여러 프로그래밍 언어를 지원하는 클라우드 PaaS 플랫폼
+
+<br/>
+
+- https://heroku.com
 
 <br/>
 
@@ -101,6 +105,12 @@ app.listen(port, () => console.log('Example app listening on port 3000'));
 
 
 
+17. heroku log 확인
+
+    - `heroku logs`
+
+      
+
 ---
 
 <br/>
@@ -112,7 +122,7 @@ app.listen(port, () => console.log('Example app listening on port 3000'));
 2. github.com 에 repository 생성
 3. heroku app과 연동
    - deploy
-   	 - manual
-   	 - automatic
+   	 - manual (수동)
+   	 - automatic (자동)
 ```
 
