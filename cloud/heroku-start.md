@@ -38,7 +38,7 @@
   },
 ```
 
-8. App.js 생성
+App.js 생성
 
 ```javascript
 const express = require('express')
@@ -51,8 +51,9 @@ app.listen(port, () => console.log('Example app listening on port 3000'));
 
 <br/>
 
-9. `npm start`
-   - 서버 정상 실행 확인
+8. `npm start`
+
+- 서버 정상 실행 확인
 
 
 
@@ -60,17 +61,17 @@ app.listen(port, () => console.log('Example app listening on port 3000'));
 
 <br/>
 
-10. heroku CLI 설치 (설치가 안되어 있다면)
+9. heroku CLI 설치 (설치가 안되어 있다면)
 
 - https://devcenter.heroku.com/articles/heroku-cli
 
 
 
-11. heroku version 확인
+10. heroku version 확인
 
-    - `heroku --version`
+- `heroku --version`
 
-      
+  
 
 12. heroku login
 
@@ -86,30 +87,33 @@ app.listen(port, () => console.log('Example app listening on port 3000'));
 
 
 
-14. heroku 반영
-    - `heroku git:remote -a <연동할 앱>` 
+11. heroku 반영
+
+- `heroku git:remote -a <연동할 앱>` 
 
 
 
-15. heroku에 반영
-    - `git push heroku master`  // heroku로 바로 반영  (Local -> heroku)
-    - `git push` // github에 반영
+12. heroku에 반영
+
+- `git push heroku master`  // heroku로 바로 반영  (Local -> heroku)
+- `git push` // github에 반영
 
 
 
-16. github -> heroku로 deploy 방법
-    - 수동 방법 (manual)
-      - github에서 수정된 파일이 push가 된 상태에서 heroku `Deploy Branch` 적용
-    - 자동 방법 (automatic)
-      - `Enable Automatic Deploys`
+13. github -> heroku로 deploy 방법
+
+- 수동 방법 (manual)
+  - github에서 수정된 파일이 push가 된 상태에서 heroku `Deploy Branch` 적용
+- 자동 방법 (automatic)
+  - `Enable Automatic Deploys`
 
 
 
-17. heroku log 확인
+14. heroku log 확인
 
-    - `heroku logs`
+- `heroku logs`
 
-      
+  
 
 ---
 
