@@ -23,7 +23,7 @@ netstat -ntpl
 
 
 
-AWS EC2 이용하기
+### AWS EC2 이용하기
 
 - VPC 발급
 - EC2 서버 만들기
