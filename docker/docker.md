@@ -30,9 +30,9 @@
   ### Container
 
   - container 실행하기
-    
+  
 - `docker container start <컨테이너 id>`
-    
+  
   -  container 중지하기
      
   -  `docker container stop <컨테이너 id>`
@@ -40,7 +40,7 @@
   - container 삭제
     
     - `docker container rm <컨테이너 id>`
-    
+  
 -  이미지 다운 & 컨테이너 실행
   
    -  `docker container run <image>`
@@ -88,8 +88,11 @@
 ### volume mount 지정
 
 - Volume mount 지정
+  
+- `-v [Windows의 경로]:[Container의 경로]`
+    - 예) `-v C:\Work\my_test:/mydata`
   - `docker run --volume D:\docker_volume:/var/lib/mysql -d -p 13306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true --name mysql mysql:5.7 `
-
+  
 - Volume 확인
 
   - `docker volumn ls`
@@ -140,3 +143,36 @@
   - `docker login`
 - image 업로드
   - `docker image push 1yangsh/mynodejs:1.0`
+
+<br/>
+
+### docker network
+
+- `docker network ls`
+  - 네트워크 확인
+- `docker network create <네트워크 이름>`
+  - 네트워크 생성
+
+- `docker network connect <네트워크 이름>  <컨테이너 id>`
+  - 컨테이너를 해당 네트워크에 연결
+- `docker network inspect <네트워크>`
+  - 네트워크 정보 확인
+
+<br/>
+
+```
+예) 
+1. 컨테이너 2개 실행 / 같은 네트워크 연결
+	- mysql
+	- mynode
+2. mynode에서 mysql을 ping 테스트
+	- docker -it [container_id] /bin/sh
+    - ping 172.17.0.2
+    - ping mysql
+   
+```
+
+
+
+
+
