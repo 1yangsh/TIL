@@ -29,6 +29,17 @@
 
 <br/>
 
+- linux
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-command.md">linux command</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-memo.md">linux memo</a>
+
+<br/>
+
+- django
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_start.md">start django</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_memo.md">django memo</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_REST_framework.md">RESTful API</a>
+
 <br/>
 
 ![KakaoTalk_20210107_155254608_03](README.assets/KakaoTalk_20210107_155254608_03.jpg)
