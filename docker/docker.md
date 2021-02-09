@@ -1,5 +1,7 @@
 ## docker
 
+> 컨테이너 가상화를 구현하기 위한 기술
+
 <br/>
 
 - 시작하기
@@ -20,14 +22,14 @@
 
   
 
-  ### Image
+### Image
 
   - image 다운로드
     - `docker image pull <image 네임>`
 
   
 
-  ### Container
+### Container
 
   - container 실행하기
   
@@ -53,7 +55,7 @@
   - 터미널을 생성해서 우분투 컨테이너 실행
     - `docker container run -it ubuntu:16.04 /bin/bash `
   - 컨테이너 Stop시, 컨테이너 삭제 옵션까지 실행
-    - ``docker container run --rm -it ubuntu:16.04 /bin/bash `
+    - `docker container run --rm -it ubuntu:16.04 /bin/bash `
 
 <br>
 
@@ -81,7 +83,9 @@
   - 이미지 삭제
     - `docker image prune`
 
+<br/>
 
+---
 
 <br/>
 
@@ -134,6 +138,10 @@
     - `curl -X GET http;//<주소>`
   - 윈도우(호스트OS)에서 접속 방법 (포트포워딩)
     - `docker run -p 8080:8080 -d mynodejs`
+
+<br/>
+
+---
 
 <br/>
 
