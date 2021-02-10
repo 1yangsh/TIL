@@ -99,7 +99,7 @@
   
 - Volume 확인
 
-  - `docker volumn ls`
+  - `docker volume ls`
 
   
 
@@ -184,3 +184,11 @@
 
 
 
+
+
+
+
+- mysql 실행
+  - `docker run -d -p 13306:3306 --network my-network --name mysql_server 1yangsh/mymysql:latest`
+- django 실행
+  - `docker run -d -p 8000:8000 --network my-network --name mybookmark_app 1yangsh/mydjango:latest`
