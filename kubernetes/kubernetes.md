@@ -50,7 +50,7 @@
 
 - `kubectl get nodes`
   - 만약 inactivate 시
-  - `systemctl status kubelet `확인
+  - `systemctl status kubelet` 확인 (각 노드에서)
   - `systemctl start kubelet`
 - namespace가 kube-system의 pod 확인
   - `kubectl get pods -o wide -n kube-system`
@@ -102,6 +102,6 @@
 
   - pod 실행
     - `kubectl exec -it <pod name> /bin/bash`
-  - curl 설치
+  - curl 설치 
     - `apt-get update && apt-get install -y curl`
   - `curl -X GET http://127.0.0.1:8000`
