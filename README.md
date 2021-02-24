@@ -1,4 +1,4 @@
-# README.md
+# TIL (Today I Learned)
 
 - 오늘 배운 내용을 지속적으로 학습, 정리하는 repo입니다.
 - `2021-01-07` ~ing
@@ -23,6 +23,8 @@
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-deployment.md">kubernetes deployment</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-service.md">kubernetes service</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-namespace.md">kubernetes namespace</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-configmap.md">kubernetes configmap</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-secret.md">kubernetes secret</a>
 
 
 
