@@ -111,3 +111,44 @@ spec:
 
 - `kubectl delete service hostname-svc-clusterip`
 
+---
+
+**1. NodePort 타입 서비스 - 서비스를 이용해 포드를 외부에 노출하기 위해서 사용**
+
+> 모든 노드의 특정 포트를 개방해 서비스에 접근하는 방식
+
+1. YAML 파일 생성
+
+- `vi hostname-svc-nodeport.yaml`
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: hostname-svc-nodeport
+spec:
+  ports:
+    - name: web-port
+      port: 8080
+      targetPort: 80
+  selector:
+    app: webserver
+  type: NodePort
+```
+
+2. 서비스 생성 및 확인
+
+- `kubectl apply -f hostname-svc-nodeport.yaml`
+- `kubectl get services`
+- `kubectl get nodes -o wide`
+
+3. 외부 IP를 통해 31543 포트로 접근
+
+- `curl 127.0.0.1:31543`
+
+4. 내부 IP와 내부 DNS 이름을 이용한 접근
+
+- `kubectl run -it --rm debug --image=alicek106/ubuntu:curl --restart=Never -- bash`
+  - `curl 127.0.0.1:31543`
+  - `curl hostname-svc-nodeport:8080`
+
