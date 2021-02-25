@@ -203,3 +203,130 @@ spec:
 
     - 시크릿을 pod의 환경변수나 볼륨파일로 가져오면 BASE64로 디코딩된 값을 사용
 
+<br/>
+
+### 예제: nginx의 기본인증정보가 담긴 파일을 시크릿으로 관리
+
+**접근통제 3단계**
+
+- 식별(identification)
+- 인증(authentication)
+  - TYPE1 : 알고있는 정보 (지식기반) 
+    - 패스워드
+  - TYPE2 : 가지고 있는 정보 (소유기반)
+    - 주민등록증, OTP, 인증서, 스마트폰
+  - TYPE3 : 특징 (생물학적 특징을 이용 => 바이오 인증)
+    - 홍채, 지문, 성문, 정맥,  … , 필기체 서명(싸인)
+  - 2가지 이상을 혼용
+    - 2-factor 인증
+    - multi-factor 인증(=다중인증방식)
+  - 멀티 디바이스 인증 = 멀티 채널 인증
+- 인가(authorization)
+
+<br/>
+
+1. openssl 모듈을 이용해서 사용자명과 암호화한 패스워드를  BASE64로 인코딩
+
+- `echo "your_name:$(openssl passwd -quiet -crypt your_password)" | base64`
+
+2. 시크릿을 생성하는 YAML 파일을 작성
+
+- `vi nginx-secret.yaml`
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: nginx-secret
+type: Opaque
+data:
+  .htpasswd: eW91cl9uYW1lOmc4TnRBanYyY05iczIK
+```
+
+3. 시크릿 생성
+
+- `kubectl apply -f nginx-secret.yaml`
+- dry-run으로 YAML 파일 만들기
+  - `kubectl create secret generic nginx-secret --from-literal .htpasswd=eW91cl9uYW1lOmc4TnRBanYyY05iczIK --dry-run -o yaml > test.yaml`
+  - `cat test.yaml`
+
+4. 시크릿을 활용해 기본인증을 적용하는 nginx 파드 구성
+
+- `vi basic-auth.yaml`
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: basic-auth
+spec:
+  type: NodePort
+  selector: 
+    app: basic-auth
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: http
+      nodePort: 30060
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: basic-auth
+  labels:
+    app: basic-auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: basic-auth
+  template:
+    metadata:
+      labels:
+        app: basic-auth
+    spec:
+      containers:
+        - name: nginx
+          image: "gihyodocker/nginx:latest"      
+          imagePullPolicy: Always
+          ports:
+          - name: http
+            containerPort: 80
+          env:
+          - name: BACKEND_HOST
+            value: "localhost:8080"
+          - name: BASIC_AUTH_FILE
+            value: "/etc/nginx/secret/.htpasswd"  # (1) 기본 인증에 사용한 인증정보가 담긴 파일
+          volumeMounts:
+            - mountPath: /etc/nginx/secret    	  # 볼륨과 연결된 디렉터리 아래에 시크릿 키 이름의 파일이 생성 (1)
+              name: nginx-secret                  # 볼륨 이름    
+              readOnly: true
+        - name: echo
+          image: "gihyodocker/echo:latest"
+          imagePullPolicy: Always
+          ports: 
+          - containerPort: 8080
+          env:
+          - name: HTTP_PORT
+            value: "8080"
+      volumes:
+      - name: nginx-secret                        # 볼륨 이름
+        secret:
+          secretName: nginx-secret                # 시크릿 이름
+
+```
+
+5. 생성 및 확인
+
+- `kubectl apply -f basic-auth.yaml`
+- `kubectl get pods,deployments,services`
+
+6. 인증 정보 없이 호출 시 401 오류 반환
+
+- `curl -i http://127.0.0.1:30060`
+
+7. 인증 정보와 함께 호출 시 정상 처리
+
+- `curl -i --user your_name:your_password http://127.0.0.1:30060`
+  - 인증 정보와 함께 전달 -> 200 상태 반환
+
