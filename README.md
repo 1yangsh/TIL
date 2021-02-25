@@ -1,11 +1,16 @@
-# TIL (Today I Learned)
+# 📝 TIL (Today I Learned)
 
-- 오늘 배운 내용을 지속적으로 학습, 정리하는 repo입니다.
+>  오늘 배운 내용을 지속적으로 학습, 정리하는 repo입니다.
+
 - `2021-01-07` ~ing
 
 ---
 
 <br/>
+
+- aws
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-memo.md">aws memo</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-IAM.md">aws IAM</a>
 
 - docker
 
@@ -13,22 +18,17 @@
 
   - <a href = "https://github.com/1yangsh/TIL/blob/master/pdf/3.Docker.pdf">docker  pdf</a>
 
-<br/>
-
 - kubernetes
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/vagrant.md">vagrant</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/kubernetes_install.md">kubernetes install</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/kubernetes.md">kubernetes memo</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-replicaset.md">kubernetes replica set</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-deployment.md">kubernetes deployment</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-service.md">kubernetes service</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-namespace.md">kubernetes namespace</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-configmap.md">kubernetes configmap</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-secret.md">kubernetes secret</a>
-
-
-
-<br/>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/kubernetes_install.md">k8s install</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/kubernetes.md">k8s memo</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-replicaset.md">k8s replica set</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-deployment.md">k8s deployment</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-service.md">k8s service</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-namespace.md">k8s namespace</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-configmap.md">k8s configmap</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-secret.md">k8s secret</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-job.md">k8s job</a>
 
 - python
 
@@ -42,25 +42,17 @@
 
   - <a href = "https://github.com/1yangsh/TIL/blob/master/python/useful-library.md">python library</a>
 
-<br/>
-
 - linux
   - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-command.md">linux command</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-memo.md">linux memo</a>
-
-<br/>
 
 - django
   - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_start.md">start django</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_memo.md">django memo</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_REST_framework.md">RESTful API</a>
 
-<br/>
-
 - db
   - <a href = "https://github.com/1yangsh/TIL/blob/master/db/db-command.md">db command</a>
-
-<br/>
 
 - cloud
   - <a href = "https://github.com/1yangsh/TIL/blob/master/cloud/cloud-fundamental.md">cloud fundamentals 1</a>
