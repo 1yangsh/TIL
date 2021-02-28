@@ -11,13 +11,13 @@
 - aws
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-memo.md">aws memo</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-IAM.md">aws IAM</a>
-
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-S3.md">aws S3</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-vpc.md">aws VPC</a>
 - docker
 
   - <a href = "https://github.com/1yangsh/TIL/blob/master/docker/docker.md">docker  사용법</a>
 
   - <a href = "https://github.com/1yangsh/TIL/blob/master/pdf/3.Docker.pdf">docker  pdf</a>
-
 - kubernetes
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/vagrant.md">vagrant</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/kubernetes_install.md">k8s install</a>
@@ -29,31 +29,22 @@
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-configmap.md">k8s configmap</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-secret.md">k8s secret</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-job.md">k8s job</a>
-
 - python
 
   - <a href = "https://github.com/1yangsh/TIL/blob/master/python/python-string-function.md">string 함수</a>
-
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/python/python-list-function.md">list 함수</a>
-
+- <a href = "https://github.com/1yangsh/TIL/blob/master/python/python-list-function.md">list 함수</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/python/regular-expression.md">regular expression</a>
-
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/python/useful-functions.md">useful functions</a>
-
+- <a href = "https://github.com/1yangsh/TIL/blob/master/python/useful-functions.md">useful functions</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/python/useful-library.md">python library</a>
-
-- linux
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-command.md">linux command</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-memo.md">linux memo</a>
-
 - django
   - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_start.md">start django</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_memo.md">django memo</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_REST_framework.md">RESTful API</a>
-
+- linux
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-command.md">linux command</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-memo.md">linux memo</a>
 - db
   - <a href = "https://github.com/1yangsh/TIL/blob/master/db/db-command.md">db command</a>
-
 - cloud
   - <a href = "https://github.com/1yangsh/TIL/blob/master/cloud/cloud-fundamental.md">cloud fundamentals 1</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/cloud/cloud-chap2.md">cloud fundamentals 2</a>
