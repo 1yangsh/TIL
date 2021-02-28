@@ -6,7 +6,7 @@
 
 ---
 
-<br/>
+### What I've Learned
 
 - aws
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-memo.md">aws memo</a>
@@ -32,9 +32,9 @@
 - python
 
   - <a href = "https://github.com/1yangsh/TIL/blob/master/python/python-string-function.md">string 함수</a>
-- <a href = "https://github.com/1yangsh/TIL/blob/master/python/python-list-function.md">list 함수</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/python/python-list-function.md">list 함수</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/python/regular-expression.md">regular expression</a>
-- <a href = "https://github.com/1yangsh/TIL/blob/master/python/useful-functions.md">useful functions</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/python/useful-functions.md">useful functions</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/python/useful-library.md">python library</a>
 - django
   - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_start.md">start django</a>
