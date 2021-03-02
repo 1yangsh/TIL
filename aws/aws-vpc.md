@@ -1,6 +1,6 @@
 ## Amazon Virtual Private Cloud (VPC)
 
-> AWS 전용 가상 내트워크
+> AWS 전용 가상 네트워크
 
 - 리전
   - AWS 서비스가 운영되는 지역
@@ -385,3 +385,76 @@ Let's finish things up with the NACLs for the remaining layers.
 - DMZ*public ⇒ 웹 서버 (80) 
 - AppLayer**private ⇒ express.js (3000)*
 - DBLayer*private ⇒ MySQL (3306)
+
+---
+
+<br/>
+
+## LAB : Troubleshooting AWS Network Connectivity: Security Groups and NACLs
+
+![img](aws-vpc.assets/IggZvSUcbWbY86XX9P2X3UkDGBbHRtqz5fUNrXmoJrqlZ4PD5ZGmmYzFApPt_rfeacSaw2TY0BWtHjOMsJBg39pBBCqu3V9NY-tugyYD8cZo_0DDvEVzPWcb1drTxIvzz0RBfdV6)
+
+![image-20210302114117170](aws-vpc.assets/image-20210302114117170.png)
+
+- **각 인스턴스에 SSH 접속 또는 ping 테스트를 시도**
+  - ⇒ Instance3은 퍼블릭 IP가 없어서 접근이 불가
+
+![img](aws-vpc.assets/1GZeBph01Xlh_OHW4i0bUrnlD7C3mov2PlOsNKNozIHyrwM8SZaWghyLw8GtJXrb742E87qkmWYcPgrI1_tkc_TlNVgr-QlfZ8uPhi1tjjJnGrZZrqnAnHXLlE7BK1jUsdmbaLNP)
+
+![img](aws-vpc.assets/OAB8lE86iyjENHs5gTifsVYOAjHewHSCHU1RMnXp4sfmxZd_k_zFT1NtJFBr51E9SKPT6E6IrbNGjCT2psel1-CnFTW0fhZ8yfaTy88se3gL9ekKQECFvLAndoKvQ3X8saI_i9nd)
+
+
+
+- Instance3의 퍼블릭 IP를 할당
+  - EIP 생성 후 인스턴스에 할당
+
+![img](aws-vpc.assets/o3QPFPX_r40I0JrCtrbTofNBp_4cs43i-pJTb8Zh26rj9IEAKOkqSkeqRiiHkD0ftuJrLnJSeFSc5X9Y0B963hCZ-V4laBApEw19ypTHTobo1ae0shpqq-Jt2mGKpuAYzx9yhdHj)
+
+![img](aws-vpc.assets/I2m3wZDECWynn8dGEK9YcJXkdvMpe2K7Rft0SCc7Qr6nI5S-n2H_wwjwkK8w52h53UqbBw3xtH73jz4OZ-pooC-JH5CJFsQ5vVkHoWHzjVOYeFX0NfWt0rQ0jkG1TsAqvweIf8EC)
+
+![img](aws-vpc.assets/wGFya_0_PU9kq-LaopXVSrwVQTv0t2-h6uyvsjN4wBuihMhkvMfKXUEyYHp5CXyzhm67ugc_ep8ELqz-x22O0a7yDcek_2pmJO-mnBJaYChAvAFt1YHoRkwi9zW5KeCzusgssCcc)
+
+- 다시 Instance3로 접속 테스트
+  - ⇒ 접속되지 않는 것을 확인
+  - ⇒ 연결된 보안 그룹 설정을 확인
+    - 인바운드로 SSHm ICMP 연결을 허용하고, 아웃바운드로 모든 포트를 허용하고 있음
+      - 따라서 보안 그룹 설정에는 문제가 없음
+
+![img](aws-vpc.assets/UsDg4O9cZVJYxmrnU8z98sqN79OnenEImL3qZ_GxTs9dTHgwsNMYRe3RwNuCaYKqPpPXQbkX2iiWDnqL7eRhSV_H39iBaYKZwil35MT2fSUlIfDGHt5v9hxFL2XWJp5vlSliAttD)
+
+- Instance3가 속해 있는 PublicSubnet4와 연결된 Private4-NACL 설정을 확인
+  - 모든 트래픽을 차단하고 있음
+
+![img](aws-vpc.assets/Ru5iXINTygPAkhZVSo5wjb2Qn0uOQhUq_8FPyDkRUzCuOz2yRFnhdJ9BZa44IkbhLC_wT1DWY2jYRSrVElSqbv-0hD8Gh6kAA5qn4mf3hJ7D3sUyx1RJWaMEHr84g40jY8-Er4aa)
+
+- 가장 설정이 유사한 Public3-NACL을 PublicSubnet4에 연결
+
+![img](aws-vpc.assets/ELiFx3DuEc3lPiMCHjJ8JjyOim_B0Kh7XLqsKNAABP1LSIs4hFIyfE5_vEBc_c-rY_3c4jeWy80qB3GcIu9K5YMf8YOx_zujmXZuDld9e1iaGwhcY5_kc_GCl6fYTKMmTc3sTxmt)
+
+- 여전히 접속되지 않는 것을 확인
+  - 라우팅 테이블을 확인
+
+![img](aws-vpc.assets/3ArD5fXx0_8Tkjr8ytTWxEWqLFTnkw_c8EdAxfP20gamVv3trBsv4nmGcwhrnGBU_CsEhnssUIKuiBx2u-JFMQ1-K7OIOBSfPF4TVdw4K9UaIUCUWnfTQBfRK_uOhmqpX7nrWIR-)
+
+- 인터넷 게이트웨이 라우팅을 추가
+
+![img](aws-vpc.assets/gRtDn8Wj0R_qwtYcekzSz8AXpm9a4ugS_by-rsGO9E1-GRDkLtzIRidhAad2ficeoYyK04iH3bxr7l2Qy5_a_i0TCU2zD6TCIZm96hCL7vuwZhiwce_CfjNxHsFqIIo9Qeibgjcr)
+
+- 연결을 확인
+
+```
+C:\Users\i>ping  3.221.200.144
+
+Ping 3.221.200.144 32바이트 데이터 사용:
+3.221.200.144의 응답: 바이트=32 시간=193ms TTL=223
+3.221.200.144의 응답: 바이트=32 시간=195ms TTL=223
+3.221.200.144의 응답: 바이트=32 시간=192ms TTL=223
+3.221.200.144의 응답: 바이트=32 시간=193ms TTL=223
+
+3.221.200.144에 대한 Ping 통계:
+    패킷: 보냄 = 4, 받음 = 4, 손실 = 0 (0% 손실),
+왕복 시간(밀리초):
+    최소 = 192ms, 최대 = 195ms, 평균 = 193ms
+```
+
+![img](aws-vpc.assets/-rh_IxnNwu6aRWZxAM4eiwDQY8VT2NzIgwUgbZEeP4PgXxz9g8Qm-oQWnEoNoKg3EzCXpkBXvympBVBW1gaxPau8AUERgMuCqf0TN6YleNcESLxF-0ueWr-PBRSK4tQnf_BAZJqz)
