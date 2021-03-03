@@ -13,6 +13,8 @@
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-IAM.md">aws IAM</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-S3.md">aws S3</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-vpc.md">aws VPC</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-EC2.md">aws EC2</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-advanced-networking.md">aws advanced networking</a>
 - docker
 
   - <a href = "https://github.com/1yangsh/TIL/blob/master/docker/docker.md">docker  사용법</a>
