@@ -15,6 +15,7 @@
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-vpc.md">aws VPC</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-EC2.md">aws EC2</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-advanced-networking.md">aws advanced networking</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-databases.md">aws databases</a>
 - docker
 
   - <a href = "https://github.com/1yangsh/TIL/blob/master/docker/docker.md">docker  사용법</a>
@@ -48,6 +49,10 @@
   - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-memo.md">linux memo</a>
 - db
   - <a href = "https://github.com/1yangsh/TIL/blob/master/db/db-command.md">db command</a>
+- git
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/git/git-command.md">git command</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/git/git-branch.md">git branch</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/git/git-memo.md">git memo</a>
 - cloud
   - <a href = "https://github.com/1yangsh/TIL/blob/master/cloud/cloud-fundamental.md">cloud fundamentals 1</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/cloud/cloud-chap2.md">cloud fundamentals 2</a>
