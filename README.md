@@ -16,6 +16,7 @@
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-EC2.md">aws EC2</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-advanced-networking.md">aws advanced networking</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-databases.md">aws databases</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-messaging.md">aws messaging</a>
 - docker
 
   - <a href = "https://github.com/1yangsh/TIL/blob/master/docker/docker.md">docker  사용법</a>
