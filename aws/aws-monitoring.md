@@ -242,6 +242,7 @@
   ![img](aws-monitoring.assets/kodyfgCZS47qgIHfmGv4CWwcrHGdWKzJSHLh0hDzWgJxjajmjFH98un9KIBEczncrFzvX5i9zQGf5uw6n2Fw6DyqOnhZbfkbSIr0Af7HSsG4ESJ5neJuI0HtHetNXQO-b72aNvSI)
 
 - 참고 :
+  
   - https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html
 
 <br/>
@@ -306,7 +307,7 @@
 
 ---
 
-- 경보를 알ㅇ릴 데이터 포인트가 3/3으로 설정된 경우
+- 경보를 알릴 데이터 포인트가 3/3으로 설정된 경우
 
 ![img](aws-monitoring.assets/8P2WEJT5XHSqiqIIS5cp0Fbp6WnTXeulO2mtoZ7eU3rVo3pbwmV9qCXyF8NC2ttf3C_NYb15-OmMBtvSCTS4HY1VHaExgqZ9SDozc0TK5BQmyy5EwiCzJ3qHzyz5zyNGBQomu_Qr)
 
