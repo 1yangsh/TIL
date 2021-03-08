@@ -9,7 +9,7 @@
 ### What I've Learned
 
 - aws
-  - aws server deployment
+  - aws infrastructure construction
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/1-aws-ec2.md">aws EC2</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/2-aws-%EC%86%8C%EC%8A%A4%EC%BD%94%EB%93%9C%EB%B0%B0%ED%8F%AC.md">aws source code release</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/3-aws-autoScaling.md">aws auto scaling</a>
