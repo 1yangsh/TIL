@@ -9,16 +9,22 @@
 ### What I've Learned
 
 - aws
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-memo.md">aws memo</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-IAM.md">aws IAM</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-S3.md">aws S3</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-vpc.md">aws VPC</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-EC2.md">aws EC2</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-advanced-networking.md">aws advanced networking</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-databases.md">aws databases</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-messaging.md">aws messaging</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-queue.md">aws queue</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-monitoring.md">aws monitoring</a>
+  - aws server deployment
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/1.%20aws-ec2.md">aws EC2</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/2.%20aws-%EC%86%8C%EC%8A%A4%EC%BD%94%EB%93%9C%EB%B0%B0%ED%8F%AC.md">aws 소스코드 배포</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/3.%20aws-autoScaling.md">aws auto scaling</a>
+  - aws lab
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-memo.md">aws memo</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-IAM.md">aws IAM</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-S3.md">aws S3</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-vpc.md">aws VPC</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-EC2.md">aws EC2</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-advanced-networking.md">aws advanced networking</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-databases.md">aws databases</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-messaging.md">aws messaging</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-queue.md">aws queue</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-monitoring.md">aws monitoring</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-serverless.md">aws serverless</a>
 - docker
 
   - <a href = "https://github.com/1yangsh/TIL/blob/master/docker/docker.md">docker  사용법</a>
@@ -38,8 +44,8 @@
   - <a href = "https://github.com/1yangsh/TIL/blob/master/pdf/4.Kubernetes.pdf">k8s pdf</a>
 - python
 
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/python/python-string-function.md">string 함수</a>
-  - <a href = "https://github.com/1yangsh/TIL/blob/master/python/python-list-function.md">list 함수</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/python/python-string-function.md">string functions</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/python/python-list-function.md">list functions</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/python/regular-expression.md">regular expression</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/python/useful-functions.md">useful functions</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/python/useful-library.md">python library</a>
