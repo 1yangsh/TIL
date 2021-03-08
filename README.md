@@ -10,9 +10,9 @@
 
 - aws
   - aws server deployment
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/1.%20aws-ec2.md">aws EC2</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/2.%20aws-%EC%86%8C%EC%8A%A4%EC%BD%94%EB%93%9C%EB%B0%B0%ED%8F%AC.md">aws 소스코드 배포</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/3.%20aws-autoScaling.md">aws auto scaling</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/1-aws-ec2.md">aws EC2</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/2-aws-%EC%86%8C%EC%8A%A4%EC%BD%94%EB%93%9C%EB%B0%B0%ED%8F%AC.md">aws 소스코드 배포</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/3-aws-autoScaling.md">aws auto scaling</a>
   - aws lab
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-memo.md">aws memo</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-IAM.md">aws IAM</a>
