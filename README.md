@@ -9,12 +9,22 @@
 ### What I've Learned
 
 - aws
-  - aws infrastructure construction
+  - aws infrastructure construction 
+    
+    > AWS 인프라 구축 가이드
+    
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/1-aws-ec2.md">aws EC2</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/2-aws-%EC%86%8C%EC%8A%A4%EC%BD%94%EB%93%9C%EB%B0%B0%ED%8F%AC.md">aws source code release</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/3-aws-autoScaling.md">aws auto scaling</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/5-aws-deployment.md">aws deployment</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/6-aws-codeDeploy.md">aws codeDeploy</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/7-aws-secrets-manager.md">aws secrets manager</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-server-deployment/8-aws-monitoring.md">aws monitoring</a>
+    
   - aws lab
+    
+    > Cloudguru Learn AWS by Doing course
+    
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-memo.md">aws memo</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-IAM.md">aws IAM</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-S3.md">aws S3</a>
@@ -58,6 +68,7 @@
   - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-command.md">linux command</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-memo.md">linux memo</a>
 - db
+  
   - <a href = "https://github.com/1yangsh/TIL/blob/master/db/db-command.md">db command</a>
 - git
   - <a href = "https://github.com/1yangsh/TIL/blob/master/git/git-command.md">git command</a>
