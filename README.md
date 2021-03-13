@@ -43,6 +43,7 @@
     > AWS 기반 서버리스 아키텍쳐
 
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/development-environment.md">aws development environment</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/3-serverless-application-constructions.md">aws serverless application constructions</a>
 
 - docker
 
