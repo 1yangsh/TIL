@@ -915,7 +915,10 @@ $ npm install aws-sdk
   메일 첨부: transcode-video.py 파일과 extract-metadata.py 파일 2개만 첨부
   ```
 
-  
+
+
+
+- transcode-video
 
 ```python
 import boto3
@@ -955,11 +958,63 @@ def lambda_handler(event, context):
     return response
 ```
 
+- extract-metadata
 
+```python
+
+import boto3
+import json
+import urllib.parse import unquote
+import os
+
+s3 = boto3.client('s3')
+
+def saveMetadataToS3(body, bucket, key):
+    print("Saving metadata to S3")
+    s3.put_object(
+        Bucket = bucket,
+        Key = key,
+        Body = body
+        )
+
+
+def extractMetadata(sourceBucket, sourceKey, localFilename):
+    print('Extracting metadata')
+
+    cmd = 'bin/ffprobe -v quiet -print_format json -show_format "/tmp/' + localFilename + '"'
+
+    data = os.popen(cmd).read()
+    if data:
+        metadataKey = sourceKey.split('.')[0] + '.json'
+        saveMetadataToS3(data, sourceBucket,metadatakey)
+    else:
+        print('stdout error')
+
+
+def saveFileToFilesystem(sourceBucket, sourceKey):
+    print('Saving to filesystem')
+
+    localFilename = sourceKey.split('/').pop()
+    with open('/tmp/' + localFilename, 'wb') as f:
+        stream = s3.get_object(
+            Bucket = sourceBucket,
+            Key = sourceKey
+            )
+        f.write(stream)
+
+    extractMetadata(sourceBucket, sourceKey, localFilename)
+
+def lambda_function(event, context):
+    message = json.loads(event['Records'][0]['Sns']['Message'])
+    sourceBucket = message['Records'][0]['s3']['bucket']['name']
+    sourceKey = message['Records'][0]['s3']['object']['key'].replace('+', ' '))
+
+    saveFileToFilesystem(sourceBucket, sourceKey)
+```
 
 
 
 - vi lambda_function.py
 - zip -r Lambda-Deployment.zip * -x *.zip
-- aws lambda update-function-code --function-name arn:aws:lambda:us-east-1:009368972154:function:extract-metadata-python --zip-file fileb://Lambda-Deployment.zip
+- aws lambda update-function-code --function-name arn:aws:lambda:us-east-1:457117745386:function:extract-metadata-python --zip-file fileb://Lambda-Deployment.zip
 
