@@ -1014,7 +1014,8 @@ def lambda_function(event, context):
 
 
 
-- vi lambda_function.py
-- zip -r Lambda-Deployment.zip * -x *.zip
-- aws lambda update-function-code --function-name arn:aws:lambda:us-east-1:457117745386:function:extract-metadata-python --zip-file fileb://Lambda-Deployment.zip
+- `vi lambda_function.py`
+- `zip -r Lambda-Deployment.zip * -x *.zip`
+- `aws lambda update-function-code --function-name arn:aws:lambda:us-east-1:457117745386:function:extract-metadata-python --zip-file fileb://Lambda-Deployment.zip`
 
+![img](3-serverless-application-constructions.assets/1sZ0TeTHZqxxU8M3DbMZ7X-_HbXUWE7jbYpgxJx6YpZ89ET0WwvMBHE6Mrab7LGHWMP8PuUUAB7WsKBrXEAU8R26_Cie9JHg2xEZZfNxHHLEyAgoKyeCcP8eIWDRyd_vTmLJGqpy)
