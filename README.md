@@ -26,7 +26,7 @@
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-monitoring.md">aws monitoring</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-serverless.md">aws serverless</a>
     
-  - **aws infrastructure construction **
+  - **aws infrastructure construction**
 
     > AWS 인프라 구축 가이드
 
@@ -44,6 +44,8 @@
 
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/development-environment.md">aws development environment</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/3-serverless-application-constructions.md">aws serverless application constructions</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/4-cloud-setup.md">aws cloud setup</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/5-authentication-authorization.md">aws authentication & authorization</a>
 
 - docker
 
