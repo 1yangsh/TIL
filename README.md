@@ -46,6 +46,9 @@
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/3-serverless-application-constructions.md">aws serverless application constructions</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/4-cloud-setup.md">aws cloud setup</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/5-authentication-authorization.md">aws authentication & authorization</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/6-lambda.md">aws lambda</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/7-api-gateway.md">aws api gateway</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/8-storage.md">aws storage</a>
 
 - docker
 
