@@ -10,22 +10,6 @@
 
 - aws
 
-  - **aws lab**
-    
-    > Cloudguru Learn AWS by Doing course
-    
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-memo.md">aws memo</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-IAM.md">aws IAM</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-S3.md">aws S3</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-vpc.md">aws VPC</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-EC2.md">aws EC2</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-advanced-networking.md">aws advanced networking</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-databases.md">aws databases</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-messaging.md">aws messaging</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-queue.md">aws queue</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-monitoring.md">aws monitoring</a>
-    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-serverless.md">aws serverless</a>
-    
   - **aws infrastructure construction**
 
     > AWS 인프라 구축 가이드
@@ -49,6 +33,22 @@
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/6-lambda.md">aws lambda</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/7-api-gateway.md">aws api gateway</a>
     - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-serverless-architecture/8-storage.md">aws storage</a>
+    
+  - **aws lab**
+
+    > Cloudguru Learn AWS by Doing course
+
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-memo.md">aws memo</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-IAM.md">aws IAM</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-S3.md">aws S3</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-vpc.md">aws VPC</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-EC2.md">aws EC2</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-advanced-networking.md">aws advanced networking</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-databases.md">aws databases</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-messaging.md">aws messaging</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-queue.md">aws queue</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-monitoring.md">aws monitoring</a>
+    - <a href = "https://github.com/1yangsh/TIL/blob/master/aws/aws-lab/aws-serverless.md">aws serverless</a>
 
 - docker
 
