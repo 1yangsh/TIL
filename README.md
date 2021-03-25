@@ -67,6 +67,7 @@
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-configmap.md">k8s configmap</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-secret.md">k8s secret</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-job.md">k8s job</a>
+  - <a href = "https://github.com/1yangsh/TIL/blob/master/kubernetes/k8s-ingress.md">k8s ingress</a>
   - <a href = "https://github.com/1yangsh/TIL/blob/master/pdf/4.Kubernetes.pdf">k8s pdf</a>
   
 - python
