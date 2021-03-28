@@ -86,6 +86,10 @@
 - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_memo.md">django memo</a>
 - <a href = "https://github.com/1yangsh/TIL/blob/master/django/django_REST_framework.md">RESTful API</a>
 
+## scrapy
+
+- <a href = "https://github.com/1yangsh/TIL/blob/master/daily/scrapy.md">scrapy</a>
+
 ## linux
 
 - <a href = "https://github.com/1yangsh/TIL/blob/master/linux/linux-command.md">linux command</a>
