@@ -41,8 +41,9 @@
   ```
 
 - vagrant 서버 실행
-  - `vagrant up`
-
+  
+- `vagrant up`
+  
 - vagrant 서버 확인
 
   - `vagrant status`
@@ -80,8 +81,10 @@
   - `vagrant ssh <server name>`
 
 - ansible 버전 확인
+  
   - `ansible --version`
 - Vagrant로 server 생성 (예시)
+  
   - Ubuntu 설치하기
 
 ```sh
@@ -175,12 +178,12 @@
       cfg.vm.network "forwarded_port", guest: 8080, host: 58080
       # cfg.vm.network "forwarded_port", guest: 9000, host: 59000
       cfg.vm.provision "shell", path: "bootstrap.sh"  
-      # cfg.vm.provision "file", source: "Ansible_env_ready.yml", destination: "Ansible_env_ready.yml"
-      # cfg.vm.provision "shell", inline: "ansible-playbook Ansible_env_ready.yml"
-      # cfg.vm.provision "shell", path: "add_ssh_auth.sh", privileged: false
+      cfg.vm.provision "file", source: "Ansible_env_ready.yml", destination: "Ansible_env_ready.yml"
+      cfg.vm.provision "shell", inline: "ansible-playbook Ansible_env_ready.yml"
+      cfg.vm.provision "shell", path: "add_ssh_auth.sh", privileged: false
   
-      # cfg.vm.provision "file", source: "Ansible_ssh_conf_4_CentOS.yml", destination: "Ansible_ssh_conf_4_CentOS.yml"
-      # cfg.vm.provision "shell", inline: "ansible-playbook Ansible_ssh_conf_4_CentOS.yml"
+      cfg.vm.provision "file", source: "Ansible_ssh_conf_4_CentOS.yml", destination: "Ansible_ssh_conf_4_CentOS.yml"
+      cfg.vm.provision "shell", inline: "ansible-playbook Ansible_ssh_conf_4_CentOS.yml"
     end
   end
   ```
@@ -213,7 +216,7 @@
     ```
       :
       :
-    [nginx]
+    [centos]
     172.20.10.11  // node01의 ip
     172.20.10.12  // node02의 ip
     ```
@@ -297,3 +300,96 @@
 > https://docs.ansible.com/ansible/2.8/modules/list_of_all_modules.html
 
 - `ansible all -m <module> ...`
+
+
+
+### httpd  설치
+
+- server에서 httpd 설치
+  - `ansible centos -m yum -a "name=httpd state=present" -k`
+- 각 노드에서 설치 확인
+  - `yum list installed | grep httpd`
+  - `systemctl status httpd`
+- 서버 기동
+  - `systemctl start httpd`
+
+<br/>
+
+---
+
+
+
+## Playbook
+
+> - 사용자가 원하는 내용을 미리 작성해 놓은 파일
+> - 다수의 서버에 반복 작업을 처리하는 경우
+
+#### 방법1. 그룹추가하기
+
+- `echo -e "[<그룹명>]\n<해당 ip>" >> /etc/ansible/hosts`
+- 추가된 그룹과 사용자 확인
+  - `tail -5 /etc/ansible/hosts`
+
+#### 방법2. playbook 사용하여 그룹 추가
+
+- playbook 디렉터리 생성
+
+  - `mkdir ansible-playbook`
+
+- 디렉터리로 이동
+
+  - `cd ansible-playbook`
+
+- yaml 파일 작성
+
+  - `vi first-playbook.yml`
+
+    ```yaml
+    ---
+    - name: Ansible_vim_test
+      hosts: localhost
+      tasks:
+        - name: Add ansible hosts
+          blockinfile:
+            path: /etc/ansible/hosts
+            block: |
+              [mygroup]
+              172.20.10.11
+    ```
+
+- playbook 실행
+
+  - `ansible-playbook <실행할 yaml file>`
+
+  > 같은 설정을 여러번 적용하더라도 결과가 달라지지 않는 성질 => ***멱등성***
+
+#### playbook을 이용하여 nginx 설치
+
+- yaml 파일 작성
+
+  - `vi nginx-playbook.yml`
+
+    ```yaml
+    ---
+    - name: Install nginx on CentOS
+      hosts: centos
+      remote_user: root
+      tasks:
+        - name: Install epel-release
+          yum: name=epel-release state=latest
+        - name: Install nginx web server
+          yum: name=nginx state=present
+        - name: Start nginx web server
+          service: name=nginx state=started
+    ```
+
+- playbook 실행
+
+  - `ansible-playbook nginx-playbook.yml -k`
+
+- nginx 상태 확인
+
+  - `systemctl status nginx`
+
+
+
