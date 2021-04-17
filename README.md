@@ -117,10 +117,7 @@
 
 - <a href = "https://github.com/1yangsh/TIL/blob/master/cloud/heroku-start.md">heroku start</a>
 
-## CS
 
-- <a href = "https://github.com/1yangsh/TIL/blob/master/daily/http.md">http</a>
-- <a href = "https://github.com/1yangsh/TIL/tree/master/daily/rendering.md">rendering</a>
 
 <br/>
 
